@@ -1,0 +1,979 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Category Video Slider 1.2.0\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: wc-category-video-slider\n"
+
+msgid "WC Category Video Slider"
+msgstr "اسلایدر ویدئوی دسته‌بندی ووکامرس"
+
+msgid "Adds a video gallery (uploaded files or external links: YouTube, Aparat, Vimeo, direct video files) with custom covers to every WooCommerce product category, displayed as a fully customizable slider right above the category description (Elementor Archive Description widget, WoodMart and any WooCommerce theme)."
+msgstr "افزودن گالری ویدئو (آپلودی یا لینک خارجی: یوتیوب، آپارات، ویمیو، فایل مستقیم) با کاور دلخواه به هر دسته محصول ووکامرس و نمایش آن به‌صورت اسلایدر کاملاً قابل شخصی‌سازی دقیقاً بالای توضیحات دسته (ویجت Archive Description المنتور، وودمارت و هر قالب ووکامرسی)."
+
+msgid "Choose video"
+msgstr "انتخاب ویدئو"
+
+msgid "Choose videos"
+msgstr "انتخاب ویدئوها"
+
+msgid "Choose cover image"
+msgstr "انتخاب تصویر کاور"
+
+msgid "Choose image"
+msgstr "انتخاب تصویر"
+
+msgid "Use this"
+msgstr "استفاده از این"
+
+msgid "Add selected videos"
+msgstr "افزودن ویدئوهای انتخاب‌شده"
+
+msgid "Remove this video from the gallery?"
+msgstr "این ویدئو از گالری حذف شود؟"
+
+msgid "(untitled video)"
+msgstr "(ویدئوی بدون عنوان)"
+
+msgid "Copied!"
+msgstr "کپی شد!"
+
+msgid "No videos yet. Add your first video."
+msgstr "هنوز ویدئویی اضافه نشده. اولین ویدئو را اضافه کنید."
+
+msgid "Add video"
+msgstr "افزودن ویدئو"
+
+msgid "Add several from media library"
+msgstr "افزودن چند ویدئو از کتابخانه رسانه"
+
+msgid "Appearance settings"
+msgstr "تنظیمات ظاهر"
+
+msgid "Drag items to reorder. External links supported: YouTube, Aparat, Vimeo and direct .mp4/.webm files. \"Main video\" is used by the \"Main video + gallery below\" layout."
+msgstr "برای تغییر ترتیب، آیتم‌ها را بکشید. لینک‌های خارجی پشتیبانی‌شده: یوتیوب، آپارات، ویمیو و فایل مستقیم ‎.mp4/.webm. گزینه «ویدئوی اصلی» در طرح «ویدئوی اصلی + گالری زیر آن» استفاده می‌شود."
+
+msgid "Drag to reorder"
+msgstr "برای تغییر ترتیب بکشید"
+
+msgid "Main video"
+msgstr "ویدئوی اصلی"
+
+msgid "Collapse / expand"
+msgstr "بستن / باز کردن"
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Video title"
+msgstr "عنوان ویدئو"
+
+msgid "Video source"
+msgstr "منبع ویدئو"
+
+msgid "Upload / media library"
+msgstr "آپلود / کتابخانه رسانه"
+
+msgid "External link"
+msgstr "لینک خارجی"
+
+msgid "Upload / choose video"
+msgstr "آپلود / انتخاب ویدئو"
+
+msgid "Hide play icon on this video"
+msgstr "مخفی کردن آیکن پخش روی این ویدئو"
+
+msgid "Orientation"
+msgstr "جهت ویدئو"
+
+msgid "Cover image"
+msgstr "تصویر کاور"
+
+msgid "Remove cover"
+msgstr "حذف کاور"
+
+msgid "Optional. YouTube thumbnails are used automatically."
+msgstr "اختیاری. برای یوتیوب تصویر بندانگشتی به‌صورت خودکار استفاده می‌شود."
+
+msgid "Default (from settings)"
+msgstr "پیش‌فرض (از تنظیمات)"
+
+msgid "Show"
+msgstr "نمایش"
+
+msgid "Hide"
+msgstr "مخفی"
+
+msgid "Category videos"
+msgstr "ویدئوهای دسته"
+
+msgid "Save the category first, then edit it to add a video gallery."
+msgstr "ابتدا دسته را ذخیره کنید، سپس برای افزودن گالری ویدئو آن را ویرایش کنید."
+
+msgid "Category video gallery"
+msgstr "گالری ویدئوی دسته‌بندی"
+
+msgid "Show the video slider on this category page"
+msgstr "نمایش اسلایدر ویدئو در صفحه این دسته"
+
+msgid "Heading (optional)"
+msgstr "عنوان (اختیاری)"
+
+msgid "Uses the default heading from settings"
+msgstr "از عنوان پیش‌فرض تنظیمات استفاده می‌شود"
+
+msgid "Layout"
+msgstr "طرح‌بندی"
+
+msgid "Play icon"
+msgstr "آیکن پخش"
+
+msgid "Max width (px)"
+msgstr "حداکثر عرض (px)"
+
+msgid "Default"
+msgstr "پیش‌فرض"
+
+msgid "Category image"
+msgstr "تصویر دسته‌بندی"
+
+msgid "Position"
+msgstr "موقعیت"
+
+msgid "Above the videos"
+msgstr "بالای ویدئوها"
+
+msgid "Below the videos"
+msgstr "پایین ویدئوها"
+
+msgid "Link (optional)"
+msgstr "لینک (اختیاری)"
+
+msgid "Shown with the category description, above or below the videos. Works even if the category has no videos."
+msgstr "همراه توضیحات دسته، بالا یا پایین ویدئوها نمایش داده می‌شود. حتی اگر دسته ویدئو نداشته باشد هم کار می‌کند."
+
+msgid "Videos"
+msgstr "ویدئوها"
+
+msgid "Changes are saved with the \"Update\" button."
+msgstr "تغییرات با دکمه «به‌روزرسانی» ذخیره می‌شوند."
+
+msgid "Close video"
+msgstr "بستن ویدئو"
+
+msgid "Video player"
+msgstr "پخش‌کننده ویدئو"
+
+#, php-format
+msgid "Go to slide %d"
+msgstr "رفتن به اسلاید %d"
+
+msgid "Video galleries"
+msgstr "گالری‌های ویدئو"
+
+msgid "Video gallery"
+msgstr "گالری ویدئو"
+
+msgid "Add gallery"
+msgstr "افزودن گالری"
+
+msgid "Add new video gallery"
+msgstr "افزودن گالری ویدئوی جدید"
+
+msgid "Edit video gallery"
+msgstr "ویرایش گالری ویدئو"
+
+msgid "New video gallery"
+msgstr "گالری ویدئوی جدید"
+
+msgid "Search galleries"
+msgstr "جستجوی گالری‌ها"
+
+msgid "No galleries found."
+msgstr "گالری‌ای پیدا نشد."
+
+msgid "No galleries found in Trash."
+msgstr "گالری‌ای در زباله‌دان پیدا نشد."
+
+msgid "All galleries"
+msgstr "همه گالری‌ها"
+
+msgid "Shortcode"
+msgstr "شورتکد"
+
+msgid "Display"
+msgstr "نمایش"
+
+msgid "Publish the gallery to get its shortcode."
+msgstr "برای دریافت شورتکد، گالری را منتشر کنید."
+
+msgid "Copy"
+msgstr "کپی"
+
+msgid "Paste it in any page, post, product description, Elementor \"Shortcode\" widget or text widget. You can also use the Elementor \"Category Video Slider\" widget and choose this gallery."
+msgstr "آن را در هر برگه، نوشته، توضیحات محصول، ویجت «شورتکد» المنتور یا ابزارک متن قرار دهید. همچنین می‌توانید از ویجت المنتور «اسلایدر ویدئوی دسته‌بندی» استفاده کنید و این گالری را انتخاب کنید."
+
+msgid "Optional attributes"
+msgstr "ویژگی‌های اختیاری"
+
+msgid "Gallery saved."
+msgstr "گالری ذخیره شد."
+
+msgid "Gallery name (only visible to you)"
+msgstr "نام گالری (فقط برای شما نمایش داده می‌شود)"
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "WC Category Video Slider requires WooCommerce to be installed and active."
+msgstr "افزونه WC Category Video Slider برای کار به ووکامرس فعال نیاز دارد."
+
+#, php-format
+msgid "%s videos"
+msgstr "ویدئوهای %s"
+
+msgid "Previous videos"
+msgstr "ویدئوهای قبلی"
+
+msgid "Next videos"
+msgstr "ویدئوهای بعدی"
+
+#, php-format
+msgid "Video %d"
+msgstr "ویدئو %d"
+
+#, php-format
+msgid "Play video: %s"
+msgstr "پخش ویدئو: %s"
+
+msgid "9:16 (vertical / reels)"
+msgstr "‎9:16 (عمودی / ریلز)"
+
+msgid "General"
+msgstr "عمومی"
+
+msgid "Default layout"
+msgstr "طرح‌بندی پیش‌فرض"
+
+msgid "Can be changed per category, per gallery, in the Elementor widget and in the shortcode."
+msgstr "برای هر دسته، هر گالری، در ویجت المنتور و در شورتکد قابل تغییر است."
+
+msgid "Show automatically on category pages"
+msgstr "نمایش خودکار در صفحات دسته‌بندی"
+
+msgid "Position relative to description text"
+msgstr "موقعیت نسبت به متن توضیحات"
+
+msgid "Above the description"
+msgstr "بالای توضیحات"
+
+msgid "Below the description"
+msgstr "پایین توضیحات"
+
+msgid "Default slider heading"
+msgstr "عنوان پیش‌فرض اسلایدر"
+
+msgid "Leave empty for no heading. Use {category} for the category name."
+msgstr "برای نداشتن عنوان خالی بگذارید. برای نام دسته از {category} استفاده کنید."
+
+msgid "Heading HTML tag"
+msgstr "تگ HTML عنوان"
+
+msgid "Play mode"
+msgstr "حالت پخش"
+
+msgid "Popup (lightbox)"
+msgstr "پاپ‌آپ (لایت‌باکس)"
+
+msgid "Inside the slide"
+msgstr "داخل همان اسلاید"
+
+msgid "Slider autoplay"
+msgstr "پخش خودکار اسلایدر"
+
+msgid "Autoplay delay (ms)"
+msgstr "تأخیر پخش خودکار (میلی‌ثانیه)"
+
+msgid "Loop"
+msgstr "چرخش بی‌پایان (Loop)"
+
+msgid "Show arrows"
+msgstr "نمایش فلش‌ها"
+
+msgid "Show dots"
+msgstr "نمایش نقطه‌ها"
+
+msgid "Show video titles"
+msgstr "نمایش عنوان ویدئوها"
+
+msgid "Cover image size"
+msgstr "اندازه تصویر کاور"
+
+msgid "Output VideoObject structured data (SEO)"
+msgstr "خروجی داده ساختاریافته VideoObject (سئو)"
+
+msgid "Layout & size"
+msgstr "چیدمان و اندازه"
+
+msgid "Slider: slides per view – desktop"
+msgstr "اسلایدر: تعداد اسلاید در هر نما – دسکتاپ"
+
+msgid "Decimals allowed (e.g. 2.5) to show part of the next slide."
+msgstr "عدد اعشاری مجاز است (مثلاً 2.5) تا بخشی از اسلاید بعدی دیده شود."
+
+msgid "Slider: slides per view – tablet (≤1024px)"
+msgstr "اسلایدر: تعداد اسلاید در هر نما – تبلت (≤1024px)"
+
+msgid "Slider: slides per view – mobile (≤767px)"
+msgstr "اسلایدر: تعداد اسلاید در هر نما – موبایل (≤767px)"
+
+msgid "Grid: columns – desktop"
+msgstr "گرید: تعداد ستون – دسکتاپ"
+
+msgid "Grid: columns – tablet"
+msgstr "گرید: تعداد ستون – تبلت"
+
+msgid "Grid: columns – mobile"
+msgstr "گرید: تعداد ستون – موبایل"
+
+msgid "Gap between videos (px)"
+msgstr "فاصله بین ویدئوها (px)"
+
+msgid "Video box aspect ratio"
+msgstr "نسبت ابعاد کادر ویدئو"
+
+msgid "Fixed video box height (px)"
+msgstr "ارتفاع ثابت کادر ویدئو (px)"
+
+msgid "0 = use aspect ratio."
+msgstr "۰ = استفاده از نسبت ابعاد."
+
+msgid "Slider padding"
+msgstr "پدینگ اسلایدر"
+
+msgid "CSS shorthand, e.g. 16px or 10px 20px 10px 20px"
+msgstr "به‌صورت CSS، مثلاً 16px یا 10px 20px 10px 20px"
+
+msgid "Slider margin"
+msgstr "مارجین اسلایدر"
+
+msgid "CSS shorthand, e.g. 0 0 24px 0"
+msgstr "به‌صورت CSS، مثلاً 0 0 24px 0"
+
+msgid "Gallery max width (px)"
+msgstr "حداکثر عرض گالری (px)"
+
+msgid "0 = full width. Limits the whole video block (slider, grid or main video). Can be changed per category / gallery."
+msgstr "۰ = تمام عرض. کل بخش ویدئو (اسلایدر، گرید یا ویدئوی اصلی) را محدود می‌کند. برای هر دسته / گالری قابل تغییر است."
+
+msgid "Gallery alignment (when narrower than the page)"
+msgstr "چینش گالری (وقتی از عرض صفحه کمتر است)"
+
+msgid "Slider background"
+msgstr "پس‌زمینه اسلایدر"
+
+msgid "Slider border radius (px)"
+msgstr "گردی گوشه اسلایدر (px)"
+
+msgid "Video box border radius (px)"
+msgstr "گردی گوشه کادر ویدئو (px)"
+
+msgid "Video box border width (px)"
+msgstr "ضخامت حاشیه کادر ویدئو (px)"
+
+msgid "Video box border color"
+msgstr "رنگ حاشیه کادر ویدئو"
+
+msgid "Video box shadow"
+msgstr "سایه کادر ویدئو"
+
+msgid "Font family"
+msgstr "فونت"
+
+msgid "Leave empty to inherit the theme font. Example: IRANSansX, sans-serif"
+msgstr "برای ارث‌بری از فونت قالب خالی بگذارید. مثال: IRANSansX, sans-serif"
+
+msgid "Main video layout"
+msgstr "طرح ویدئوی اصلی"
+
+msgid "One large main video with the rest of the gallery as a slider underneath. Choose the main video with the \"Main video\" option on each video; otherwise the first video is used."
+msgstr "یک ویدئوی اصلی بزرگ و بقیه گالری به‌صورت اسلایدر زیر آن. ویدئوی اصلی را با گزینه «ویدئوی اصلی» روی هر ویدئو انتخاب کنید؛ در غیر این صورت اولین ویدئو استفاده می‌شود."
+
+msgid "Main video aspect ratio"
+msgstr "نسبت ابعاد ویدئوی اصلی"
+
+msgid "Auto – fit each video (vertical / horizontal)"
+msgstr "خودکار – متناسب با هر ویدئو (عمودی / افقی)"
+
+msgid "Main video max width (px)"
+msgstr "حداکثر عرض ویدئوی اصلی (px)"
+
+msgid "0 = full width."
+msgstr "۰ = تمام عرض."
+
+#, php-format
+msgid "Main video max height (% of screen height)"
+msgstr "حداکثر ارتفاع ویدئوی اصلی (درصد ارتفاع صفحه)"
+
+msgid "Keeps vertical videos from becoming huge: the width shrinks to fit. 0 = no limit."
+msgstr "جلوی بزرگ شدن بیش از حد ویدئوهای عمودی را می‌گیرد: عرض به اندازه لازم کوچک می‌شود. ۰ = بدون محدودیت."
+
+msgid "Main video alignment"
+msgstr "چینش ویدئوی اصلی"
+
+msgid "Space between main video and gallery (px)"
+msgstr "فاصله بین ویدئوی اصلی و گالری (px)"
+
+msgid "Gallery thumbnails per view – desktop"
+msgstr "تعداد تصاویر گالری در هر نما – دسکتاپ"
+
+msgid "Gallery thumbnails per view – tablet"
+msgstr "تعداد تصاویر گالری در هر نما – تبلت"
+
+msgid "Gallery thumbnails per view – mobile"
+msgstr "تعداد تصاویر گالری در هر نما – موبایل"
+
+msgid "Clicking a gallery video"
+msgstr "با کلیک روی ویدئوی گالری"
+
+msgid "Plays it in the main video box"
+msgstr "در کادر ویدئوی اصلی پخش شود"
+
+msgid "Opens it in a popup"
+msgstr "در پاپ‌آپ باز شود"
+
+msgid "Also show the main video in the gallery below"
+msgstr "ویدئوی اصلی در گالری پایین هم نمایش داده شود"
+
+msgid "Show the main video title"
+msgstr "نمایش عنوان ویدئوی اصلی"
+
+msgid "Main title font size (px)"
+msgstr "اندازه فونت عنوان اصلی (px)"
+
+msgid "Main title font weight"
+msgstr "ضخامت فونت عنوان اصلی"
+
+msgid "Main title color"
+msgstr "رنگ عنوان اصلی"
+
+msgid "Highlight color of the playing video"
+msgstr "رنگ برجسته‌سازی ویدئوی در حال پخش"
+
+msgid "Heading & titles"
+msgstr "عنوان‌ها"
+
+msgid "Heading font size (px)"
+msgstr "اندازه فونت عنوان اسلایدر (px)"
+
+msgid "Heading font weight"
+msgstr "ضخامت فونت عنوان اسلایدر"
+
+msgid "Heading color"
+msgstr "رنگ عنوان اسلایدر"
+
+msgid "Heading alignment"
+msgstr "چینش عنوان اسلایدر"
+
+msgid "Space below heading (px)"
+msgstr "فاصله زیر عنوان (px)"
+
+msgid "Video title font size (px)"
+msgstr "اندازه فونت عنوان ویدئو (px)"
+
+msgid "Video title font weight"
+msgstr "ضخامت فونت عنوان ویدئو"
+
+msgid "Video title color"
+msgstr "رنگ عنوان ویدئو"
+
+msgid "Video title background"
+msgstr "پس‌زمینه عنوان ویدئو"
+
+msgid "Video title alignment"
+msgstr "چینش عنوان ویدئو"
+
+msgid "Video title padding"
+msgstr "پدینگ عنوان ویدئو"
+
+msgid "CSS shorthand, e.g. 8px 2px"
+msgstr "به‌صورت CSS، مثلاً 8px 2px"
+
+msgid "Video title maximum lines"
+msgstr "حداکثر تعداد خط عنوان ویدئو"
+
+msgid "Play button"
+msgstr "دکمه پخش"
+
+msgid "Show play button on covers"
+msgstr "نمایش دکمه پخش روی کاورها"
+
+msgid "Turn off if your cover images already contain a play icon. It can also be hidden for a single video in the gallery editor."
+msgstr "اگر تصاویر کاور شما خودشان آیکن پخش دارند، خاموشش کنید. برای یک ویدئوی خاص هم می‌توانید آن را در ویرایشگر گالری مخفی کنید."
+
+msgid "Custom icon image"
+msgstr "تصویر آیکن سفارشی"
+
+msgid "Used when \"Custom image\" is selected. PNG, WebP or SVG (if your site allows SVG uploads)."
+msgstr "وقتی «تصویر سفارشی» انتخاب شده باشد استفاده می‌شود. PNG، WebP یا SVG (اگر سایت شما آپلود SVG را مجاز کرده باشد)."
+
+msgid "Button shape"
+msgstr "شکل دکمه"
+
+msgid "Circle"
+msgstr "دایره"
+
+msgid "Rounded square"
+msgstr "مربع با گوشه گرد"
+
+msgid "Square"
+msgstr "مربع"
+
+msgid "Icon only (no background)"
+msgstr "فقط آیکن (بدون پس‌زمینه)"
+
+msgid "Button position"
+msgstr "موقعیت دکمه"
+
+msgid "Center"
+msgstr "وسط"
+
+msgid "Bottom – start corner"
+msgstr "پایین – گوشه ابتدا"
+
+msgid "Bottom – end corner"
+msgstr "پایین – گوشه انتها"
+
+msgid "Top – start corner"
+msgstr "بالا – گوشه ابتدا"
+
+msgid "Top – end corner"
+msgstr "بالا – گوشه انتها"
+
+msgid "Corner offset (px)"
+msgstr "فاصله از گوشه (px)"
+
+msgid "Button size (px)"
+msgstr "اندازه دکمه (px)"
+
+#, php-format
+msgid "Icon size inside button (%)"
+msgstr "اندازه آیکن داخل دکمه (%)"
+
+msgid "Icon color"
+msgstr "رنگ آیکن"
+
+msgid "Icon color (hover)"
+msgstr "رنگ آیکن (هاور)"
+
+msgid "Button background"
+msgstr "پس‌زمینه دکمه"
+
+msgid "Button background (hover)"
+msgstr "پس‌زمینه دکمه (هاور)"
+
+msgid "Button border width (px)"
+msgstr "ضخامت حاشیه دکمه (px)"
+
+msgid "Button border color"
+msgstr "رنگ حاشیه دکمه"
+
+msgid "Animation"
+msgstr "انیمیشن"
+
+msgid "None"
+msgstr "هیچ"
+
+msgid "Pulse ring"
+msgstr "موج ضربانی (Pulse)"
+
+msgid "Cover overlay color"
+msgstr "رنگ لایه روی کاور"
+
+msgid "Cover overlay opacity (0–1)"
+msgstr "شفافیت لایه روی کاور (۰ تا ۱)"
+
+msgid "Arrows, dots & popup"
+msgstr "فلش‌ها، نقطه‌ها و پاپ‌آپ"
+
+msgid "Arrow size (px)"
+msgstr "اندازه فلش (px)"
+
+msgid "Arrow icon color"
+msgstr "رنگ آیکن فلش"
+
+msgid "Arrow background"
+msgstr "پس‌زمینه فلش"
+
+msgid "Arrow border radius (px)"
+msgstr "گردی گوشه فلش (px)"
+
+msgid "Dot size (px)"
+msgstr "اندازه نقطه (px)"
+
+msgid "Dot color"
+msgstr "رنگ نقطه"
+
+msgid "Active dot color"
+msgstr "رنگ نقطه فعال"
+
+msgid "Popup background"
+msgstr "پس‌زمینه پاپ‌آپ"
+
+msgid "Popup max width (px)"
+msgstr "حداکثر عرض پاپ‌آپ (px)"
+
+msgid "An optional image for each category (set it on the category edit screen), shown above or below the videos."
+msgstr "یک تصویر اختیاری برای هر دسته (در صفحه ویرایش دسته تنظیم می‌شود) که بالا یا پایین ویدئوها نمایش داده می‌شود."
+
+msgid "Default position"
+msgstr "موقعیت پیش‌فرض"
+
+msgid "Can be changed per category."
+msgstr "برای هر دسته قابل تغییر است."
+
+msgid "Image size"
+msgstr "اندازه تصویر"
+
+msgid "Image max width (px)"
+msgstr "حداکثر عرض تصویر (px)"
+
+msgid "Image alignment"
+msgstr "چینش تصویر"
+
+msgid "Image border radius (px)"
+msgstr "گردی گوشه تصویر (px)"
+
+msgid "Space between image and videos (px)"
+msgstr "فاصله بین تصویر و ویدئوها (px)"
+
+msgid "Image shadow"
+msgstr "سایه تصویر"
+
+msgid "Theme compatibility"
+msgstr "سازگاری با قالب"
+
+msgid "Where the slider is inserted automatically. The defaults work with Hello Elementor + Elementor Pro (Archive Description widget), WoodMart, Astra, Flatsome, Kadence, Blocksy, OceanWP, Storefront and block themes. The slider is never printed twice on the same page."
+msgstr "محل درج خودکار اسلایدر. تنظیمات پیش‌فرض با هلو المنتور + المنتور پرو (ویجت Archive Description)، وودمارت، آسترا، فلت‌سام، کادنس، بلاکسی، اوشن‌WP، استورفرانت و قالب‌های بلوکی کار می‌کند. اسلایدر هیچ‌وقت دو بار در یک صفحه چاپ نمی‌شود."
+
+msgid "WooCommerce \"woocommerce_archive_description\" hook"
+msgstr "هوک ووکامرس «woocommerce_archive_description»"
+
+msgid "Used by the Elementor Pro \"Archive Description\" widget, WoodMart and almost every classic WooCommerce theme."
+msgstr "مورد استفاده ویجت Archive Description المنتور پرو، وودمارت و تقریباً همه قالب‌های کلاسیک ووکامرس."
+
+msgid "Block themes: \"Term Description\" block"
+msgstr "قالب‌های بلوکی: بلوک «توضیحات دسته (Term Description)»"
+
+msgid "For full-site-editing themes (Twenty Twenty-Five, WooCommerce block templates…)."
+msgstr "برای قالب‌های ویرایش کامل سایت (Twenty Twenty-Five، قالب‌های بلوکی ووکامرس…)."
+
+msgid "Archive description filter (get_the_archive_description)"
+msgstr "فیلتر توضیحات آرشیو (get_the_archive_description)"
+
+msgid "For the Elementor \"Archive Description\" dynamic tag inside a Text Editor widget."
+msgstr "برای تگ داینامیک Archive Description المنتور داخل ویجت ویرایشگر متن."
+
+msgid "Fallback: term_description filter"
+msgstr "جایگزین: فیلتر term_description"
+
+msgid "Only for custom themes that print the description with term_description() directly. Leave off unless the slider does not appear."
+msgstr "فقط برای قالب‌های سفارشی که توضیحات را مستقیم با term_description()‎ چاپ می‌کنند. تا وقتی اسلایدر نمایش داده می‌شود خاموش بماند."
+
+msgid "Load slider files on all shop/category pages"
+msgstr "بارگذاری فایل‌های اسلایدر در همه صفحات فروشگاه و دسته‌ها"
+
+msgid "Needed by AJAX shop filters / pagination (WoodMart AJAX shop, Elementor loop AJAX). About 6 KB gzip."
+msgstr "لازم برای فیلترها و صفحه‌بندی ایجکسی فروشگاه (فروشگاه ایجکسی وودمارت، Loop ایجکسی المنتور). حدود ۶ کیلوبایت فشرده."
+
+msgid "Optimization plugin compatibility"
+msgstr "سازگاری با افزونه‌های بهینه‌سازی"
+
+msgid "Excludes the tiny slider script from \"Delay JavaScript\" and protects popup styles from \"Remove unused CSS\" in WP Rocket and Perfmatters."
+msgstr "اسکریپت کوچک اسلایدر را از «تأخیر جاوااسکریپت» مستثنی می‌کند و استایل‌های پاپ‌آپ را از «حذف CSS استفاده‌نشده» در WP Rocket و Perfmatters محافظت می‌کند."
+
+msgid "Advanced"
+msgstr "پیشرفته"
+
+msgid "Custom CSS"
+msgstr "CSS سفارشی"
+
+msgid "Root class: .rcvs – items: .rcvs__slide, .rcvs__media, .rcvs__title, .rcvs__play, .rcvs__arrow, .rcvs__dot, .rcvs__main, .rcvs__stage"
+msgstr "کلاس اصلی: ‎.rcvs – اجزا: ‎.rcvs__slide, .rcvs__media, .rcvs__title, .rcvs__play, .rcvs__arrow, .rcvs__dot, .rcvs__main, .rcvs__stage"
+
+msgid "Slider"
+msgstr "اسلایدر"
+
+msgid "Main video + gallery below"
+msgstr "ویدئوی اصلی + گالری زیر آن"
+
+msgid "Grid (no slider)"
+msgstr "گرید (بدون اسلایدر)"
+
+msgid "Solid triangle"
+msgstr "مثلث توپر"
+
+msgid "Rounded triangle"
+msgstr "مثلث گرد"
+
+msgid "Outline triangle"
+msgstr "مثلث خطی"
+
+msgid "Play in circle"
+msgstr "پخش داخل دایره"
+
+msgid "Rounded rectangle"
+msgstr "مستطیل گرد"
+
+msgid "Thin arrow"
+msgstr "فلش نازک"
+
+msgid "Custom image"
+msgstr "تصویر سفارشی"
+
+msgid "Start"
+msgstr "ابتدا"
+
+msgid "End"
+msgstr "انتها"
+
+msgid "Category Video Slider"
+msgstr "اسلایدر ویدئوی دسته‌بندی"
+
+msgid "Category Videos"
+msgstr "ویدئوهای دسته‌بندی"
+
+msgid "Settings were reset to defaults."
+msgstr "تنظیمات به حالت پیش‌فرض بازگردانده شد."
+
+msgid "Videos are added per category in Products → Categories → Edit category. These options control how every category video slider looks and behaves. If you use the Elementor \"Category Video Slider\" widget, its own style controls override these values."
+msgstr "ویدئوها برای هر دسته از مسیر محصولات ← دسته‌ها ← ویرایش دسته اضافه می‌شوند. این گزینه‌ها ظاهر و رفتار همه اسلایدرهای ویدئو را کنترل می‌کنند. اگر از ویجت المنتور «اسلایدر ویدئوی دسته‌بندی» استفاده کنید، تنظیمات استایل همان ویجت بر این مقادیر اولویت دارد."
+
+msgid "Save changes"
+msgstr "ذخیره تغییرات"
+
+msgid "Reset all settings to defaults?"
+msgstr "همه تنظیمات به پیش‌فرض بازگردد؟"
+
+msgid "Reset to defaults"
+msgstr "بازگشت به پیش‌فرض"
+
+msgid "Auto"
+msgstr "خودکار"
+
+msgid "Horizontal 16:9"
+msgstr "افقی 16:9"
+
+msgid "Vertical 9:16"
+msgstr "عمودی 9:16"
+
+msgid "Square 1:1"
+msgstr "مربع 1:1"
+
+msgid "Video"
+msgstr "ویدئو"
+
+msgid "Global setting"
+msgstr "تنظیمات سراسری"
+
+msgid "Yes"
+msgstr "بله"
+
+msgid "No"
+msgstr "خیر"
+
+msgid "Source"
+msgstr "منبع"
+
+msgid "Current category (archive template)"
+msgstr "دسته فعلی (قالب آرشیو)"
+
+msgid "Choose a category"
+msgstr "انتخاب یک دسته"
+
+msgid "Standalone video gallery"
+msgstr "گالری ویدئوی مستقل"
+
+msgid "Product category"
+msgstr "دسته محصول"
+
+msgid "Videos are managed in Products → Categories → Edit category. If you place this widget, consider disabling automatic insertion in WooCommerce → Category Videos to avoid showing the slider twice."
+msgstr "ویدئوها از مسیر محصولات ← دسته‌ها ← ویرایش دسته مدیریت می‌شوند. اگر این ویجت را استفاده می‌کنید، برای جلوگیری از نمایش دوباره، درج خودکار را در ووکامرس ← ویدئوهای دسته‌بندی غیرفعال کنید."
+
+msgid "Show category image"
+msgstr "نمایش تصویر دسته‌بندی"
+
+msgid "Default (category / gallery / settings)"
+msgstr "پیش‌فرض (دسته / گالری / تنظیمات)"
+
+msgid "Show heading"
+msgstr "نمایش عنوان"
+
+msgid "Heading"
+msgstr "عنوان"
+
+msgid "Empty = category / global heading"
+msgstr "خالی = عنوان دسته / سراسری"
+
+msgid "Use {category} for the category name."
+msgstr "برای نام دسته از {category} استفاده کنید."
+
+msgid "Autoplay"
+msgstr "پخش خودکار"
+
+msgid "Arrows"
+msgstr "فلش‌ها"
+
+msgid "Dots"
+msgstr "نقطه‌ها"
+
+msgid "Video titles"
+msgstr "عنوان ویدئوها"
+
+msgid "VideoObject schema"
+msgstr "اسکیمای VideoObject"
+
+msgid "Global"
+msgstr "سراسری"
+
+msgid "Show play button"
+msgstr "نمایش دکمه پخش"
+
+msgid "Hide it if your covers already contain a play icon."
+msgstr "اگر کاورهایتان خودشان آیکن پخش دارند، مخفی‌اش کنید."
+
+msgid "Built-in icon"
+msgstr "آیکن آماده"
+
+msgid "Custom icon"
+msgstr "آیکن سفارشی"
+
+msgid "Icon library or SVG upload. Overrides the built-in icon."
+msgstr "کتابخانه آیکن یا آپلود SVG. بر آیکن آماده اولویت دارد."
+
+msgid "Slider layout"
+msgstr "چیدمان اسلایدر"
+
+msgid "Slides per view"
+msgstr "تعداد اسلاید در هر نما"
+
+msgid "Decimals allowed (e.g. 2.5)."
+msgstr "عدد اعشاری مجاز است (مثلاً 2.5)."
+
+msgid "Gap"
+msgstr "فاصله"
+
+msgid "Aspect ratio"
+msgstr "نسبت ابعاد"
+
+msgid "Fixed video height"
+msgstr "ارتفاع ثابت ویدئو"
+
+msgid "Overrides the aspect ratio."
+msgstr "بر نسبت ابعاد اولویت دارد."
+
+msgid "Max width"
+msgstr "حداکثر عرض"
+
+msgid "Alignment"
+msgstr "چینش"
+
+msgid "Padding"
+msgstr "پدینگ"
+
+msgid "Margin"
+msgstr "مارجین"
+
+msgid "Background"
+msgstr "پس‌زمینه"
+
+msgid "Border radius"
+msgstr "گردی گوشه"
+
+msgid "Video box"
+msgstr "کادر ویدئو"
+
+msgid "Overlay color"
+msgstr "رنگ لایه"
+
+msgid "Overlay opacity"
+msgstr "شفافیت لایه"
+
+msgid "Overlay opacity (hover)"
+msgstr "شفافیت لایه (هاور)"
+
+msgid "Disable cover zoom on hover"
+msgstr "غیرفعال کردن زوم کاور در هاور"
+
+msgid "Main video (main video layout)"
+msgstr "ویدئوی اصلی (طرح ویدئوی اصلی)"
+
+#, php-format
+msgid "Max height (% of screen)"
+msgstr "حداکثر ارتفاع (درصد صفحه)"
+
+msgid "Vertical videos shrink in width to respect this height."
+msgstr "ویدئوهای عمودی برای رعایت این ارتفاع، عرض کمتری می‌گیرند."
+
+msgid "Space above gallery"
+msgstr "فاصله تا گالری"
+
+msgid "Title typography"
+msgstr "تایپوگرافی عنوان"
+
+msgid "Title color"
+msgstr "رنگ عنوان"
+
+msgid "Color"
+msgstr "رنگ"
+
+msgid "Left"
+msgstr "چپ"
+
+msgid "Right"
+msgstr "راست"
+
+msgid "Spacing"
+msgstr "فاصله"
+
+msgid "Maximum lines"
+msgstr "حداکثر تعداد خط"
+
+msgid "Size"
+msgstr "اندازه"
+
+msgid "Icon size inside button"
+msgstr "اندازه آیکن داخل دکمه"
+
+msgid "Corner offset"
+msgstr "فاصله از گوشه"
+
+msgid "Background (hover)"
+msgstr "پس‌زمینه (هاور)"
+
+msgid "Arrows & dots"
+msgstr "فلش‌ها و نقطه‌ها"
+
+msgid "Arrow size"
+msgstr "اندازه فلش"
+
+msgid "Arrow horizontal offset"
+msgstr "فاصله افقی فلش"
+
+msgid "Arrow border radius"
+msgstr "گردی گوشه فلش"
+
+msgid "Arrow color"
+msgstr "رنگ فلش"
+
+msgid "Dot size"
+msgstr "اندازه نقطه"
+
+msgid "Dots top spacing"
+msgstr "فاصله بالای نقطه‌ها"
+
+msgid "No videos found. Add videos to a product category (Products → Categories → Edit) or create a video gallery to preview this widget."
+msgstr "ویدئویی پیدا نشد. برای پیش‌نمایش این ویجت، به یک دسته محصول ویدئو اضافه کنید (محصولات ← دسته‌ها ← ویرایش) یا یک گالری ویدئو بسازید."

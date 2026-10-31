@@ -1,0 +1,654 @@
+/*! WC Category Video Slider – front-end */
+
+/*
+ * Specificity note: buttons use ".rcvs.rcvs button.x" (0,3,1) so they win over
+ * Hello Elementor reset.css ("[type=button]:hover" 0,2,0), Elementor Kit global
+ * styles (".elementor-kit-N button:hover" 0,2,1), WoodMart, Astra, etc.
+ */
+
+.rcvs {
+	--rcvs-pv-d: 3;
+	--rcvs-pv-t: 2;
+	--rcvs-pv-m: 1.2;
+	--rcvs-per-view: var(--rcvs-pv-d);
+	--rcvs-gap: 16px;
+	--rcvs-ratio: 16/9;
+	--rcvs-height: auto;
+	--rcvs-padding: 0;
+	--rcvs-margin: 0 0 24px 0;
+	--rcvs-bg: transparent;
+	--rcvs-wrap-radius: 0px;
+	--rcvs-radius: 12px;
+	--rcvs-border-width: 0px;
+	--rcvs-border-color: transparent;
+	--rcvs-shadow: none;
+	--rcvs-font: inherit;
+	--rcvs-main-ratio: 16/9;
+	--rcvs-main-max: 100%;
+	--rcvs-main-spacing: 16px;
+	--rcvs-mt-size: 18px;
+	--rcvs-mt-weight: 700;
+	--rcvs-mt-color: inherit;
+	--rcvs-active: #2271b1;
+	--rcvs-h-size: 20px;
+	--rcvs-h-weight: 700;
+	--rcvs-h-color: inherit;
+	--rcvs-h-align: start;
+	--rcvs-h-spacing: 12px;
+	--rcvs-t-size: 14px;
+	--rcvs-t-weight: 500;
+	--rcvs-t-color: inherit;
+	--rcvs-t-bg: transparent;
+	--rcvs-t-align: start;
+	--rcvs-t-padding: 8px 2px;
+	--rcvs-t-lines: 2;
+	--rcvs-play-size: 56px;
+	--rcvs-play-scale: 42%;
+	--rcvs-play-offset: 16px;
+	--rcvs-play-radius: 50%;
+	--rcvs-play-color: #fff;
+	--rcvs-play-hover: #fff;
+	--rcvs-play-bg: rgba(0, 0, 0, .55);
+	--rcvs-play-hover-bg: rgba(0, 0, 0, .8);
+	--rcvs-play-border: 0 solid transparent;
+	--rcvs-overlay: #000;
+	--rcvs-overlay-opacity: .15;
+	--rcvs-arrow-size: 40px;
+	--rcvs-arrow-color: #222;
+	--rcvs-arrow-bg: #fff;
+	--rcvs-arrow-radius: 50px;
+	--rcvs-dot-size: 8px;
+	--rcvs-dot-color: #d0d0d0;
+	--rcvs-dot-active: #222;
+
+	position: relative;
+	display: block;
+	width: 100%;
+	min-width: 0;
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: var(--rcvs-margin);
+	padding: var(--rcvs-padding);
+	background: var(--rcvs-bg);
+	border-radius: var(--rcvs-wrap-radius);
+	font-family: var(--rcvs-font);
+	text-align: start;
+	clear: both;
+	/* Never let the scrolling track widen flex/grid parents (Elementor containers, WoodMart columns). */
+	contain: inline-size;
+}
+
+/* Elementor flex containers: allow the widget to shrink. */
+.elementor-widget-rcvs-video-slider,
+.elementor-widget-woocommerce-archive-description,
+.elementor-widget-shortcode:has(.rcvs) {
+	min-width: 0;
+	max-width: 100%;
+}
+
+.rcvs *,
+.rcvs *::before,
+.rcvs *::after {
+	box-sizing: border-box;
+}
+
+.rcvs.rcvs .rcvs__heading {
+	margin: 0 0 var(--rcvs-h-spacing);
+	padding: 0;
+	font-family: inherit;
+	font-size: var(--rcvs-h-size);
+	font-weight: var(--rcvs-h-weight);
+	line-height: 1.4;
+	color: var(--rcvs-h-color);
+	text-align: var(--rcvs-h-align);
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+.rcvs__viewport {
+	position: relative;
+}
+
+/* Track: native scroll-snap — works even before JS loads. */
+.rcvs.rcvs .rcvs__track {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: var(--rcvs-gap);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	overscroll-behavior-x: contain;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+	outline: none;
+}
+
+.rcvs .rcvs__track::-webkit-scrollbar {
+	display: none;
+}
+
+.rcvs .rcvs__track:focus-visible {
+	outline: 2px solid var(--rcvs-dot-active);
+	outline-offset: 4px;
+}
+
+.rcvs.rcvs .rcvs__slide {
+	flex: 0 0 calc((100% - (var(--rcvs-per-view) - 1) * var(--rcvs-gap)) / var(--rcvs-per-view));
+	width: auto;
+	min-width: 0;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+	scroll-snap-align: start;
+}
+
+.rcvs.rcvs .rcvs__item {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+}
+
+/* ---------- Media button (cover + play) ---------- */
+.rcvs.rcvs button.rcvs__media {
+	all: unset;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	width: 100%;
+	aspect-ratio: var(--rcvs-ratio);
+	height: var(--rcvs-height);
+	overflow: hidden;
+	border: var(--rcvs-border-width) solid var(--rcvs-border-color);
+	border-radius: var(--rcvs-radius);
+	box-shadow: var(--rcvs-shadow);
+	background: #111;
+	cursor: pointer;
+	line-height: 0;
+	isolation: isolate;
+	-webkit-tap-highlight-color: transparent;
+	transition: box-shadow .25s ease, border-color .25s ease;
+}
+
+.rcvs.rcvs button.rcvs__media:hover,
+.rcvs.rcvs button.rcvs__media:focus {
+	background: #111;
+	color: inherit;
+	border-color: var(--rcvs-border-color);
+}
+
+.rcvs.rcvs button.rcvs__media:focus-visible {
+	outline: 3px solid var(--rcvs-dot-active);
+	outline-offset: 2px;
+}
+
+.rcvs.rcvs .rcvs__cover {
+	position: absolute;
+	inset: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	max-height: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	object-fit: cover;
+	transition: transform .45s ease;
+}
+
+.rcvs .rcvs__media:hover .rcvs__cover {
+	transform: scale(1.05);
+}
+
+.rcvs .rcvs__placeholder {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(135deg, #2a2a2e 0%, #4a4a52 100%);
+}
+
+.rcvs .rcvs__overlay {
+	position: absolute;
+	inset: 0;
+	background: var(--rcvs-overlay);
+	opacity: var(--rcvs-overlay-opacity);
+	transition: opacity .3s ease;
+	pointer-events: none;
+}
+
+/* ---------- Play button ---------- */
+.rcvs.rcvs .rcvs__play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--rcvs-play-size);
+	height: var(--rcvs-play-size);
+	margin: 0;
+	padding: 0;
+	border: var(--rcvs-play-border);
+	border-radius: var(--rcvs-play-radius);
+	background: var(--rcvs-play-bg);
+	color: var(--rcvs-play-color);
+	line-height: 0;
+	transform: translate(-50%, -50%);
+	transition: transform .25s ease, background-color .25s ease, color .25s ease;
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter: blur(3px);
+	pointer-events: none;
+}
+
+.rcvs.rcvs .rcvs__play svg,
+.rcvs.rcvs .rcvs__play i,
+.rcvs.rcvs .rcvs__play .rcvs__play-img {
+	display: block;
+	width: var(--rcvs-play-scale);
+	height: var(--rcvs-play-scale);
+	max-width: none;
+	margin: 0;
+	fill: currentColor;
+	color: inherit;
+	font-size: calc(var(--rcvs-play-size) * .42);
+	line-height: 1;
+	object-fit: contain;
+}
+
+.rcvs.rcvs .rcvs__play i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: auto;
+}
+
+/* Optical centering of right-pointing triangles. */
+.rcvs .rcvs__play-svg--triangle,
+.rcvs .rcvs__play-svg--triangle-rounded,
+.rcvs .rcvs__play-svg--triangle-outline {
+	translate: 6% 0;
+}
+
+.rcvs .rcvs__media:hover .rcvs__play,
+.rcvs .rcvs__media:focus-visible .rcvs__play {
+	background: var(--rcvs-play-hover-bg);
+	color: var(--rcvs-play-hover);
+	transform: translate(-50%, -50%) scale(1.08);
+}
+
+/* Shapes. */
+.rcvs.rcvs--pshape-rounded { --rcvs-play-radius: 22%; }
+.rcvs.rcvs--pshape-square { --rcvs-play-radius: 0; }
+.rcvs.rcvs.rcvs--pshape-none .rcvs__play,
+.rcvs.rcvs.rcvs--pshape-none .rcvs__media:hover .rcvs__play {
+	background: transparent;
+	border: 0;
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+	filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .45));
+}
+.rcvs.rcvs.rcvs--pshape-none .rcvs__play svg,
+.rcvs.rcvs.rcvs--pshape-none .rcvs__play .rcvs__play-img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Positions (logical: start/end follow RTL). */
+.rcvs.rcvs:not(.rcvs--ppos-center) .rcvs__play {
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	transform: none;
+}
+.rcvs.rcvs:not(.rcvs--ppos-center) .rcvs__media:hover .rcvs__play { transform: scale(1.08); }
+.rcvs.rcvs.rcvs--ppos-bottom-start .rcvs__play { bottom: var(--rcvs-play-offset); inset-inline-start: var(--rcvs-play-offset); }
+.rcvs.rcvs.rcvs--ppos-bottom-end .rcvs__play { bottom: var(--rcvs-play-offset); inset-inline-end: var(--rcvs-play-offset); }
+.rcvs.rcvs.rcvs--ppos-top-start .rcvs__play { top: var(--rcvs-play-offset); inset-inline-start: var(--rcvs-play-offset); }
+.rcvs.rcvs.rcvs--ppos-top-end .rcvs__play { top: var(--rcvs-play-offset); inset-inline-end: var(--rcvs-play-offset); }
+
+/* Pulse animation. */
+.rcvs.rcvs--panim-pulse .rcvs__play::after {
+	content: "";
+	position: absolute;
+	inset: -2px;
+	border-radius: inherit;
+	border: 2px solid var(--rcvs-play-color);
+	opacity: 0;
+	animation: rcvs-pulse 2s ease-out infinite;
+}
+@keyframes rcvs-pulse {
+	0% { opacity: .7; transform: scale(1); }
+	100% { opacity: 0; transform: scale(1.6); }
+}
+
+/* Play button hidden (global or per video). */
+.rcvs.rcvs.rcvs--no-play .rcvs__play,
+.rcvs.rcvs .rcvs__media--no-play .rcvs__play {
+	display: none;
+}
+
+/* ---------- Titles ---------- */
+.rcvs.rcvs .rcvs__title {
+	display: -webkit-box;
+	margin: 0;
+	padding: var(--rcvs-t-padding);
+	overflow: hidden;
+	border: 0;
+	font-family: inherit;
+	font-size: var(--rcvs-t-size);
+	font-style: normal;
+	font-weight: var(--rcvs-t-weight);
+	line-height: 1.6;
+	color: var(--rcvs-t-color);
+	background: var(--rcvs-t-bg);
+	text-align: var(--rcvs-t-align);
+	-webkit-line-clamp: var(--rcvs-t-lines);
+	-webkit-box-orient: vertical;
+}
+
+/* ---------- Inline player ---------- */
+.rcvs .rcvs__player {
+	position: relative;
+	width: 100%;
+	aspect-ratio: var(--rcvs-ratio);
+	height: var(--rcvs-height);
+	overflow: hidden;
+	border-radius: var(--rcvs-radius);
+	background: #000;
+}
+
+.rcvs.rcvs .rcvs__player iframe,
+.rcvs.rcvs .rcvs__player video {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	margin: 0;
+	border: 0;
+	background: #000;
+}
+
+/* ---------- Layout: main video + gallery ---------- */
+.rcvs .rcvs__main {
+	width: 100%;
+	/* Width is limited by the max width AND by the max height × the video's own ratio,
+	   so vertical videos never become huge. */
+	max-width: min(var(--rcvs-main-max), calc(var(--rcvs-main-max-h) * var(--rcvs-stage-n, 1.7778)));
+	margin-top: 0;
+	margin-bottom: var(--rcvs-main-spacing);
+	margin-inline-start: var(--rcvs-main-ms);
+	margin-inline-end: var(--rcvs-main-me);
+	transition: max-width .3s ease;
+}
+
+.rcvs .rcvs__stage {
+	position: relative;
+	width: 100%;
+}
+
+.rcvs.rcvs .rcvs__stage button.rcvs__media,
+.rcvs.rcvs .rcvs__stage .rcvs__player {
+	aspect-ratio: var(--rcvs-stage-ratio, var(--rcvs-main-ratio));
+	height: auto;
+}
+
+/* Whole block narrower than the page. */
+.rcvs.rcvs.rcvs--boxed {
+	max-width: min(100%, var(--rcvs-max-w));
+	margin-inline-start: var(--rcvs-ms);
+	margin-inline-end: var(--rcvs-me);
+}
+
+.rcvs.rcvs .rcvs__stage .rcvs__play {
+	width: calc(var(--rcvs-play-size) * 1.3);
+	height: calc(var(--rcvs-play-size) * 1.3);
+}
+
+.rcvs.rcvs .rcvs__main-title {
+	margin: 10px 0 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: var(--rcvs-mt-size);
+	font-weight: var(--rcvs-mt-weight);
+	line-height: 1.5;
+	color: var(--rcvs-mt-color);
+}
+
+.rcvs--layout-featured .rcvs__slide.is-current button.rcvs__media {
+	box-shadow: 0 0 0 3px var(--rcvs-active);
+}
+
+.rcvs--layout-featured .rcvs__slide.is-current .rcvs__title {
+	color: var(--rcvs-active);
+}
+
+/* Room for the active ring inside the scroll container. */
+.rcvs.rcvs.rcvs--layout-featured .rcvs__track {
+	padding: 4px 3px;
+}
+
+/* ---------- Layout: grid ---------- */
+.rcvs.rcvs.rcvs--layout-grid .rcvs__track {
+	flex-wrap: wrap;
+	row-gap: calc(var(--rcvs-gap) * 1.25);
+	overflow: visible;
+	scroll-snap-type: none;
+}
+
+/* ---------- Arrows ---------- */
+.rcvs.rcvs button.rcvs__arrow {
+	all: unset;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--rcvs-arrow-size);
+	height: var(--rcvs-arrow-size);
+	margin-top: calc(var(--rcvs-arrow-size) / -2);
+	border-radius: var(--rcvs-arrow-radius);
+	background: var(--rcvs-arrow-bg);
+	color: var(--rcvs-arrow-color);
+	box-shadow: 0 2px 12px rgba(0, 0, 0, .15);
+	cursor: pointer;
+	transition: opacity .2s ease, transform .2s ease;
+}
+
+.rcvs.rcvs button.rcvs__arrow:hover,
+.rcvs.rcvs button.rcvs__arrow:focus {
+	background: var(--rcvs-arrow-bg);
+	color: var(--rcvs-arrow-color);
+}
+
+.rcvs.rcvs:not(.rcvs--no-titles) button.rcvs__arrow {
+	/* Center on the video box rather than box + title. */
+	top: calc(50% - (var(--rcvs-t-size) * 1.6 * var(--rcvs-t-lines) + 16px) / 2);
+}
+
+.rcvs.rcvs button.rcvs__arrow svg {
+	width: 55%;
+	height: 55%;
+	fill: currentColor;
+}
+
+.rcvs.rcvs button.rcvs__arrow--prev { inset-inline-start: 8px; }
+.rcvs.rcvs button.rcvs__arrow--next { inset-inline-end: 8px; }
+
+.rcvs button.rcvs__arrow--next svg { transform: scaleX(-1); }
+.rcvs.rcvs--rtl button.rcvs__arrow--prev svg { transform: scaleX(-1); }
+.rcvs.rcvs--rtl button.rcvs__arrow--next svg { transform: none; }
+
+.rcvs.rcvs button.rcvs__arrow:hover { transform: scale(1.06); }
+.rcvs.rcvs button.rcvs__arrow:focus-visible { outline: 2px solid var(--rcvs-arrow-color); outline-offset: 2px; }
+.rcvs.rcvs button.rcvs__arrow[disabled] { opacity: 0; pointer-events: none; }
+
+/* ---------- Dots ---------- */
+.rcvs .rcvs__dots {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 14px;
+}
+
+.rcvs .rcvs__dots:empty { display: none; }
+
+.rcvs.rcvs button.rcvs__dot {
+	all: unset;
+	box-sizing: border-box;
+	width: var(--rcvs-dot-size);
+	height: var(--rcvs-dot-size);
+	border-radius: 999px;
+	background: var(--rcvs-dot-color);
+	cursor: pointer;
+	transition: width .25s ease, background-color .25s ease;
+}
+
+.rcvs.rcvs button.rcvs__dot:hover,
+.rcvs.rcvs button.rcvs__dot:focus { background: var(--rcvs-dot-color); }
+
+.rcvs.rcvs button.rcvs__dot.is-active {
+	width: calc(var(--rcvs-dot-size) * 2.5);
+	background: var(--rcvs-dot-active);
+}
+
+.rcvs.rcvs button.rcvs__dot:focus-visible { outline: 2px solid var(--rcvs-dot-active); outline-offset: 2px; }
+
+.rcvs.rcvs.rcvs--static button.rcvs__arrow,
+.rcvs.rcvs.rcvs--static .rcvs__dots { display: none; }
+
+/* Without JS, arrows are useless – hide until initialised. */
+.rcvs.rcvs:not(.rcvs--ready) button.rcvs__arrow { display: none; }
+
+/* ---------- Category image ---------- */
+.rcvs-catimg.rcvs-catimg {
+	display: block;
+	width: 100%;
+	max-width: min(100%, var(--rcvs-img-max, 100%));
+	margin-top: 0;
+	margin-bottom: var(--rcvs-img-spacing, 16px);
+	margin-inline-start: var(--rcvs-img-ms, auto);
+	margin-inline-end: var(--rcvs-img-me, auto);
+	padding: 0;
+	border: 0;
+	line-height: 0;
+	clear: both;
+}
+
+.rcvs-catimg.rcvs-catimg--after {
+	margin-top: var(--rcvs-img-spacing, 16px);
+}
+
+.rcvs-catimg .rcvs-catimg__link {
+	display: block;
+}
+
+.rcvs-catimg.rcvs-catimg .rcvs-catimg__img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	margin: 0;
+	border: 0;
+	border-radius: var(--rcvs-img-radius, 12px);
+	box-shadow: var(--rcvs-img-shadow, none);
+}
+
+/* ---------- Lightbox ---------- */
+.rcvs-lightbox {
+	--rcvs-lb-bg: rgba(0, 0, 0, .88);
+	--rcvs-lb-width: 1000px;
+	position: fixed;
+	inset: 0;
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	background: var(--rcvs-lb-bg);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .25s ease, visibility .25s ease;
+}
+
+.rcvs-lightbox[hidden] { display: none; }
+
+.rcvs-lightbox.is-open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.rcvs-lightbox__frame {
+	position: relative;
+	max-width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	background: #000;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, .5);
+	transform: scale(.96);
+	transition: transform .25s ease;
+}
+
+.rcvs-lightbox.is-open .rcvs-lightbox__frame { transform: none; }
+
+.rcvs-lightbox.rcvs-lightbox .rcvs-lightbox__frame iframe,
+.rcvs-lightbox.rcvs-lightbox .rcvs-lightbox__frame video {
+	position: absolute;
+	inset: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	margin: 0;
+	border: 0;
+	background: #000;
+}
+
+.rcvs-lightbox.rcvs-lightbox button.rcvs-lightbox__close {
+	all: unset;
+	box-sizing: border-box;
+	position: absolute;
+	top: 14px;
+	inset-inline-end: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .15);
+	color: #fff;
+	cursor: pointer;
+	transition: background-color .2s ease;
+}
+
+.rcvs-lightbox.rcvs-lightbox button.rcvs-lightbox__close:hover,
+.rcvs-lightbox.rcvs-lightbox button.rcvs-lightbox__close:focus { background: rgba(255, 255, 255, .3); color: #fff; }
+.rcvs-lightbox.rcvs-lightbox button.rcvs-lightbox__close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.rcvs-lightbox.rcvs-lightbox button.rcvs-lightbox__close svg { width: 22px; height: 22px; fill: currentColor; }
+
+html.rcvs-lock,
+html.rcvs-lock body { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+	.rcvs .rcvs__track { scroll-behavior: auto; }
+	.rcvs *,
+	.rcvs *::after,
+	.rcvs-lightbox,
+	.rcvs-lightbox * { transition: none !important; animation: none !important; }
+}

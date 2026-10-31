@@ -1,0 +1,975 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Category Video Slider 1.2.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"X-Domain: wc-category-video-slider\n"
+
+msgid "WC Category Video Slider"
+msgstr ""
+
+msgid "Adds a video gallery (uploaded files or external links: YouTube, Aparat, Vimeo, direct video files) with custom covers to every WooCommerce product category, displayed as a fully customizable slider right above the category description (Elementor Archive Description widget, WoodMart and any WooCommerce theme)."
+msgstr ""
+
+msgid "Choose video"
+msgstr ""
+
+msgid "Choose videos"
+msgstr ""
+
+msgid "Choose cover image"
+msgstr ""
+
+msgid "Choose image"
+msgstr ""
+
+msgid "Use this"
+msgstr ""
+
+msgid "Add selected videos"
+msgstr ""
+
+msgid "Remove this video from the gallery?"
+msgstr ""
+
+msgid "(untitled video)"
+msgstr ""
+
+msgid "Copied!"
+msgstr ""
+
+msgid "No videos yet. Add your first video."
+msgstr ""
+
+msgid "Add video"
+msgstr ""
+
+msgid "Add several from media library"
+msgstr ""
+
+msgid "Appearance settings"
+msgstr ""
+
+msgid "Drag items to reorder. External links supported: YouTube, Aparat, Vimeo and direct .mp4/.webm files. \"Main video\" is used by the \"Main video + gallery below\" layout."
+msgstr ""
+
+msgid "Drag to reorder"
+msgstr ""
+
+msgid "Main video"
+msgstr ""
+
+msgid "Collapse / expand"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Video title"
+msgstr ""
+
+msgid "Video source"
+msgstr ""
+
+msgid "Upload / media library"
+msgstr ""
+
+msgid "External link"
+msgstr ""
+
+msgid "Upload / choose video"
+msgstr ""
+
+msgid "Hide play icon on this video"
+msgstr ""
+
+msgid "Orientation"
+msgstr ""
+
+msgid "Cover image"
+msgstr ""
+
+msgid "Remove cover"
+msgstr ""
+
+msgid "Optional. YouTube thumbnails are used automatically."
+msgstr ""
+
+msgid "Default (from settings)"
+msgstr ""
+
+msgid "Show"
+msgstr ""
+
+msgid "Hide"
+msgstr ""
+
+msgid "Category videos"
+msgstr ""
+
+msgid "Save the category first, then edit it to add a video gallery."
+msgstr ""
+
+msgid "Category video gallery"
+msgstr ""
+
+msgid "Show the video slider on this category page"
+msgstr ""
+
+msgid "Heading (optional)"
+msgstr ""
+
+msgid "Uses the default heading from settings"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Play icon"
+msgstr ""
+
+msgid "Max width (px)"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Category image"
+msgstr ""
+
+msgid "Position"
+msgstr ""
+
+msgid "Above the videos"
+msgstr ""
+
+msgid "Below the videos"
+msgstr ""
+
+msgid "Link (optional)"
+msgstr ""
+
+msgid "Shown with the category description, above or below the videos. Works even if the category has no videos."
+msgstr ""
+
+msgid "Videos"
+msgstr ""
+
+msgid "Changes are saved with the \"Update\" button."
+msgstr ""
+
+msgid "Close video"
+msgstr ""
+
+msgid "Video player"
+msgstr ""
+
+#, php-format
+msgid "Go to slide %d"
+msgstr ""
+
+msgid "Video galleries"
+msgstr ""
+
+msgid "Video gallery"
+msgstr ""
+
+msgid "Add gallery"
+msgstr ""
+
+msgid "Add new video gallery"
+msgstr ""
+
+msgid "Edit video gallery"
+msgstr ""
+
+msgid "New video gallery"
+msgstr ""
+
+msgid "Search galleries"
+msgstr ""
+
+msgid "No galleries found."
+msgstr ""
+
+msgid "No galleries found in Trash."
+msgstr ""
+
+msgid "All galleries"
+msgstr ""
+
+msgid "Shortcode"
+msgstr ""
+
+msgid "Display"
+msgstr ""
+
+msgid "Publish the gallery to get its shortcode."
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Paste it in any page, post, product description, Elementor \"Shortcode\" widget or text widget. You can also use the Elementor \"Category Video Slider\" widget and choose this gallery."
+msgstr ""
+
+msgid "Optional attributes"
+msgstr ""
+
+msgid "Gallery saved."
+msgstr ""
+
+msgid "Gallery name (only visible to you)"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "WC Category Video Slider requires WooCommerce to be installed and active."
+msgstr ""
+
+#, php-format
+msgid "%s videos"
+msgstr ""
+
+msgid "Previous videos"
+msgstr ""
+
+msgid "Next videos"
+msgstr ""
+
+#, php-format
+msgid "Video %d"
+msgstr ""
+
+#, php-format
+msgid "Play video: %s"
+msgstr ""
+
+msgid "9:16 (vertical / reels)"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Default layout"
+msgstr ""
+
+msgid "Can be changed per category, per gallery, in the Elementor widget and in the shortcode."
+msgstr ""
+
+msgid "Show automatically on category pages"
+msgstr ""
+
+msgid "Position relative to description text"
+msgstr ""
+
+msgid "Above the description"
+msgstr ""
+
+msgid "Below the description"
+msgstr ""
+
+msgid "Default slider heading"
+msgstr ""
+
+msgid "Leave empty for no heading. Use {category} for the category name."
+msgstr ""
+
+msgid "Heading HTML tag"
+msgstr ""
+
+msgid "Play mode"
+msgstr ""
+
+msgid "Popup (lightbox)"
+msgstr ""
+
+msgid "Inside the slide"
+msgstr ""
+
+msgid "Slider autoplay"
+msgstr ""
+
+msgid "Autoplay delay (ms)"
+msgstr ""
+
+msgid "Loop"
+msgstr ""
+
+msgid "Show arrows"
+msgstr ""
+
+msgid "Show dots"
+msgstr ""
+
+msgid "Show video titles"
+msgstr ""
+
+msgid "Cover image size"
+msgstr ""
+
+msgid "Output VideoObject structured data (SEO)"
+msgstr ""
+
+msgid "Layout & size"
+msgstr ""
+
+msgid "Slider: slides per view – desktop"
+msgstr ""
+
+msgid "Decimals allowed (e.g. 2.5) to show part of the next slide."
+msgstr ""
+
+msgid "Slider: slides per view – tablet (≤1024px)"
+msgstr ""
+
+msgid "Slider: slides per view – mobile (≤767px)"
+msgstr ""
+
+msgid "Grid: columns – desktop"
+msgstr ""
+
+msgid "Grid: columns – tablet"
+msgstr ""
+
+msgid "Grid: columns – mobile"
+msgstr ""
+
+msgid "Gap between videos (px)"
+msgstr ""
+
+msgid "Video box aspect ratio"
+msgstr ""
+
+msgid "Fixed video box height (px)"
+msgstr ""
+
+msgid "0 = use aspect ratio."
+msgstr ""
+
+msgid "Slider padding"
+msgstr ""
+
+msgid "CSS shorthand, e.g. 16px or 10px 20px 10px 20px"
+msgstr ""
+
+msgid "Slider margin"
+msgstr ""
+
+msgid "CSS shorthand, e.g. 0 0 24px 0"
+msgstr ""
+
+msgid "Gallery max width (px)"
+msgstr ""
+
+msgid "0 = full width. Limits the whole video block (slider, grid or main video). Can be changed per category / gallery."
+msgstr ""
+
+msgid "Gallery alignment (when narrower than the page)"
+msgstr ""
+
+msgid "Slider background"
+msgstr ""
+
+msgid "Slider border radius (px)"
+msgstr ""
+
+msgid "Video box border radius (px)"
+msgstr ""
+
+msgid "Video box border width (px)"
+msgstr ""
+
+msgid "Video box border color"
+msgstr ""
+
+msgid "Video box shadow"
+msgstr ""
+
+msgid "Font family"
+msgstr ""
+
+msgid "Leave empty to inherit the theme font. Example: IRANSansX, sans-serif"
+msgstr ""
+
+msgid "Main video layout"
+msgstr ""
+
+msgid "One large main video with the rest of the gallery as a slider underneath. Choose the main video with the \"Main video\" option on each video; otherwise the first video is used."
+msgstr ""
+
+msgid "Main video aspect ratio"
+msgstr ""
+
+msgid "Auto – fit each video (vertical / horizontal)"
+msgstr ""
+
+msgid "Main video max width (px)"
+msgstr ""
+
+msgid "0 = full width."
+msgstr ""
+
+#, php-format
+msgid "Main video max height (% of screen height)"
+msgstr ""
+
+msgid "Keeps vertical videos from becoming huge: the width shrinks to fit. 0 = no limit."
+msgstr ""
+
+msgid "Main video alignment"
+msgstr ""
+
+msgid "Space between main video and gallery (px)"
+msgstr ""
+
+msgid "Gallery thumbnails per view – desktop"
+msgstr ""
+
+msgid "Gallery thumbnails per view – tablet"
+msgstr ""
+
+msgid "Gallery thumbnails per view – mobile"
+msgstr ""
+
+msgid "Clicking a gallery video"
+msgstr ""
+
+msgid "Plays it in the main video box"
+msgstr ""
+
+msgid "Opens it in a popup"
+msgstr ""
+
+msgid "Also show the main video in the gallery below"
+msgstr ""
+
+msgid "Show the main video title"
+msgstr ""
+
+msgid "Main title font size (px)"
+msgstr ""
+
+msgid "Main title font weight"
+msgstr ""
+
+msgid "Main title color"
+msgstr ""
+
+msgid "Highlight color of the playing video"
+msgstr ""
+
+msgid "Heading & titles"
+msgstr ""
+
+msgid "Heading font size (px)"
+msgstr ""
+
+msgid "Heading font weight"
+msgstr ""
+
+msgid "Heading color"
+msgstr ""
+
+msgid "Heading alignment"
+msgstr ""
+
+msgid "Space below heading (px)"
+msgstr ""
+
+msgid "Video title font size (px)"
+msgstr ""
+
+msgid "Video title font weight"
+msgstr ""
+
+msgid "Video title color"
+msgstr ""
+
+msgid "Video title background"
+msgstr ""
+
+msgid "Video title alignment"
+msgstr ""
+
+msgid "Video title padding"
+msgstr ""
+
+msgid "CSS shorthand, e.g. 8px 2px"
+msgstr ""
+
+msgid "Video title maximum lines"
+msgstr ""
+
+msgid "Play button"
+msgstr ""
+
+msgid "Show play button on covers"
+msgstr ""
+
+msgid "Turn off if your cover images already contain a play icon. It can also be hidden for a single video in the gallery editor."
+msgstr ""
+
+msgid "Custom icon image"
+msgstr ""
+
+msgid "Used when \"Custom image\" is selected. PNG, WebP or SVG (if your site allows SVG uploads)."
+msgstr ""
+
+msgid "Button shape"
+msgstr ""
+
+msgid "Circle"
+msgstr ""
+
+msgid "Rounded square"
+msgstr ""
+
+msgid "Square"
+msgstr ""
+
+msgid "Icon only (no background)"
+msgstr ""
+
+msgid "Button position"
+msgstr ""
+
+msgid "Center"
+msgstr ""
+
+msgid "Bottom – start corner"
+msgstr ""
+
+msgid "Bottom – end corner"
+msgstr ""
+
+msgid "Top – start corner"
+msgstr ""
+
+msgid "Top – end corner"
+msgstr ""
+
+msgid "Corner offset (px)"
+msgstr ""
+
+msgid "Button size (px)"
+msgstr ""
+
+#, php-format
+msgid "Icon size inside button (%)"
+msgstr ""
+
+msgid "Icon color"
+msgstr ""
+
+msgid "Icon color (hover)"
+msgstr ""
+
+msgid "Button background"
+msgstr ""
+
+msgid "Button background (hover)"
+msgstr ""
+
+msgid "Button border width (px)"
+msgstr ""
+
+msgid "Button border color"
+msgstr ""
+
+msgid "Animation"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Pulse ring"
+msgstr ""
+
+msgid "Cover overlay color"
+msgstr ""
+
+msgid "Cover overlay opacity (0–1)"
+msgstr ""
+
+msgid "Arrows, dots & popup"
+msgstr ""
+
+msgid "Arrow size (px)"
+msgstr ""
+
+msgid "Arrow icon color"
+msgstr ""
+
+msgid "Arrow background"
+msgstr ""
+
+msgid "Arrow border radius (px)"
+msgstr ""
+
+msgid "Dot size (px)"
+msgstr ""
+
+msgid "Dot color"
+msgstr ""
+
+msgid "Active dot color"
+msgstr ""
+
+msgid "Popup background"
+msgstr ""
+
+msgid "Popup max width (px)"
+msgstr ""
+
+msgid "An optional image for each category (set it on the category edit screen), shown above or below the videos."
+msgstr ""
+
+msgid "Default position"
+msgstr ""
+
+msgid "Can be changed per category."
+msgstr ""
+
+msgid "Image size"
+msgstr ""
+
+msgid "Image max width (px)"
+msgstr ""
+
+msgid "Image alignment"
+msgstr ""
+
+msgid "Image border radius (px)"
+msgstr ""
+
+msgid "Space between image and videos (px)"
+msgstr ""
+
+msgid "Image shadow"
+msgstr ""
+
+msgid "Theme compatibility"
+msgstr ""
+
+msgid "Where the slider is inserted automatically. The defaults work with Hello Elementor + Elementor Pro (Archive Description widget), WoodMart, Astra, Flatsome, Kadence, Blocksy, OceanWP, Storefront and block themes. The slider is never printed twice on the same page."
+msgstr ""
+
+msgid "WooCommerce \"woocommerce_archive_description\" hook"
+msgstr ""
+
+msgid "Used by the Elementor Pro \"Archive Description\" widget, WoodMart and almost every classic WooCommerce theme."
+msgstr ""
+
+msgid "Block themes: \"Term Description\" block"
+msgstr ""
+
+msgid "For full-site-editing themes (Twenty Twenty-Five, WooCommerce block templates…)."
+msgstr ""
+
+msgid "Archive description filter (get_the_archive_description)"
+msgstr ""
+
+msgid "For the Elementor \"Archive Description\" dynamic tag inside a Text Editor widget."
+msgstr ""
+
+msgid "Fallback: term_description filter"
+msgstr ""
+
+msgid "Only for custom themes that print the description with term_description() directly. Leave off unless the slider does not appear."
+msgstr ""
+
+msgid "Load slider files on all shop/category pages"
+msgstr ""
+
+msgid "Needed by AJAX shop filters / pagination (WoodMart AJAX shop, Elementor loop AJAX). About 6 KB gzip."
+msgstr ""
+
+msgid "Optimization plugin compatibility"
+msgstr ""
+
+msgid "Excludes the tiny slider script from \"Delay JavaScript\" and protects popup styles from \"Remove unused CSS\" in WP Rocket and Perfmatters."
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "Custom CSS"
+msgstr ""
+
+msgid "Root class: .rcvs – items: .rcvs__slide, .rcvs__media, .rcvs__title, .rcvs__play, .rcvs__arrow, .rcvs__dot, .rcvs__main, .rcvs__stage"
+msgstr ""
+
+msgid "Slider"
+msgstr ""
+
+msgid "Main video + gallery below"
+msgstr ""
+
+msgid "Grid (no slider)"
+msgstr ""
+
+msgid "Solid triangle"
+msgstr ""
+
+msgid "Rounded triangle"
+msgstr ""
+
+msgid "Outline triangle"
+msgstr ""
+
+msgid "Play in circle"
+msgstr ""
+
+msgid "Rounded rectangle"
+msgstr ""
+
+msgid "Thin arrow"
+msgstr ""
+
+msgid "Custom image"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "End"
+msgstr ""
+
+msgid "Category Video Slider"
+msgstr ""
+
+msgid "Category Videos"
+msgstr ""
+
+msgid "Settings were reset to defaults."
+msgstr ""
+
+msgid "Videos are added per category in Products → Categories → Edit category. These options control how every category video slider looks and behaves. If you use the Elementor \"Category Video Slider\" widget, its own style controls override these values."
+msgstr ""
+
+msgid "Save changes"
+msgstr ""
+
+msgid "Reset all settings to defaults?"
+msgstr ""
+
+msgid "Reset to defaults"
+msgstr ""
+
+msgid "Auto"
+msgstr ""
+
+msgid "Horizontal 16:9"
+msgstr ""
+
+msgid "Vertical 9:16"
+msgstr ""
+
+msgid "Square 1:1"
+msgstr ""
+
+msgid "Video"
+msgstr ""
+
+msgid "Global setting"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Source"
+msgstr ""
+
+msgid "Current category (archive template)"
+msgstr ""
+
+msgid "Choose a category"
+msgstr ""
+
+msgid "Standalone video gallery"
+msgstr ""
+
+msgid "Product category"
+msgstr ""
+
+msgid "Videos are managed in Products → Categories → Edit category. If you place this widget, consider disabling automatic insertion in WooCommerce → Category Videos to avoid showing the slider twice."
+msgstr ""
+
+msgid "Show category image"
+msgstr ""
+
+msgid "Default (category / gallery / settings)"
+msgstr ""
+
+msgid "Show heading"
+msgstr ""
+
+msgid "Heading"
+msgstr ""
+
+msgid "Empty = category / global heading"
+msgstr ""
+
+msgid "Use {category} for the category name."
+msgstr ""
+
+msgid "Autoplay"
+msgstr ""
+
+msgid "Arrows"
+msgstr ""
+
+msgid "Dots"
+msgstr ""
+
+msgid "Video titles"
+msgstr ""
+
+msgid "VideoObject schema"
+msgstr ""
+
+msgid "Global"
+msgstr ""
+
+msgid "Show play button"
+msgstr ""
+
+msgid "Hide it if your covers already contain a play icon."
+msgstr ""
+
+msgid "Built-in icon"
+msgstr ""
+
+msgid "Custom icon"
+msgstr ""
+
+msgid "Icon library or SVG upload. Overrides the built-in icon."
+msgstr ""
+
+msgid "Slider layout"
+msgstr ""
+
+msgid "Slides per view"
+msgstr ""
+
+msgid "Decimals allowed (e.g. 2.5)."
+msgstr ""
+
+msgid "Gap"
+msgstr ""
+
+msgid "Aspect ratio"
+msgstr ""
+
+msgid "Fixed video height"
+msgstr ""
+
+msgid "Overrides the aspect ratio."
+msgstr ""
+
+msgid "Max width"
+msgstr ""
+
+msgid "Alignment"
+msgstr ""
+
+msgid "Padding"
+msgstr ""
+
+msgid "Margin"
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "Border radius"
+msgstr ""
+
+msgid "Video box"
+msgstr ""
+
+msgid "Overlay color"
+msgstr ""
+
+msgid "Overlay opacity"
+msgstr ""
+
+msgid "Overlay opacity (hover)"
+msgstr ""
+
+msgid "Disable cover zoom on hover"
+msgstr ""
+
+msgid "Main video (main video layout)"
+msgstr ""
+
+#, php-format
+msgid "Max height (% of screen)"
+msgstr ""
+
+msgid "Vertical videos shrink in width to respect this height."
+msgstr ""
+
+msgid "Space above gallery"
+msgstr ""
+
+msgid "Title typography"
+msgstr ""
+
+msgid "Title color"
+msgstr ""
+
+msgid "Color"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Spacing"
+msgstr ""
+
+msgid "Maximum lines"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Icon size inside button"
+msgstr ""
+
+msgid "Corner offset"
+msgstr ""
+
+msgid "Background (hover)"
+msgstr ""
+
+msgid "Arrows & dots"
+msgstr ""
+
+msgid "Arrow size"
+msgstr ""
+
+msgid "Arrow horizontal offset"
+msgstr ""
+
+msgid "Arrow border radius"
+msgstr ""
+
+msgid "Arrow color"
+msgstr ""
+
+msgid "Dot size"
+msgstr ""
+
+msgid "Dots top spacing"
+msgstr ""
+
+msgid "No videos found. Add videos to a product category (Products → Categories → Edit) or create a video gallery to preview this widget."
+msgstr ""
